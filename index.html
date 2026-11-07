@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Project</title>
-    <style>
-        body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1e1b4b; color: #ffffff; font-family: sans-serif; text-align: center; }
-        .box { background: #312e81; padding: 30px; border-radius: 15px; }
-        h1 { color: #34d399; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test - Syed Ibraheem Shafi</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="box">
-        <h1>Syed Ibrahim Shafi</h1>
-        <p>Mera GitHub Test Link Bilkul Sahi Kaam Kar Raha Hai! 🎉</p>
+  <div class="container">
+    <h1>Typing Speed Test ⌨️</h1>
+    <p class="subtitle">Apni typing speed aur accuracy check karein!</p>
+    
+    <div class="stats-box">
+      <div class="stat">Time Left: <span id="timer">60</span>s</div>
+      <div class="stat">WPM: <span id="wpm">0</span></div>
+      <div class="stat">Accuracy: <span id="accuracy">100</span>%</div>
     </div>
+
+    <div class="text-display" id="text-display"></div>
+
+    <textarea id="input-box" placeholder="Yahan type karna shuru karein..." autofocus></textarea>
+
+    <button id="restart-btn">Restart Test</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
